@@ -23,3 +23,4 @@ Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index'])-
 Route::resource('standerd', App\Http\Controllers\StanderdController::class);
 Route::resource('subject', App\Http\Controllers\SubjectController::class);
 Route::resource('teacher', App\Http\Controllers\TeacherController::class);
+Route::resource('parent', App\Http\Controllers\StudentParentController::class);

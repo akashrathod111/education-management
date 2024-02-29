@@ -35,5 +35,11 @@
                 <span class="menu-title">Parent</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url('/student')}}">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Student</span>
+            </a>
+        </li>
     </ul>
 </nav>

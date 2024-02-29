@@ -29,5 +29,11 @@
             </a>
         </li>
         @endif
+        <li class="nav-item">
+            <a class="nav-link" href="{{url('/parent')}}">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Parent</span>
+            </a>
+        </li>
     </ul>
 </nav>

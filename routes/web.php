@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
 Route::resource('standerd', App\Http\Controllers\StanderdController::class);
+Route::resource('subject', App\Http\Controllers\SubjectController::class);

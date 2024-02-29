@@ -12,5 +12,11 @@
                 <span class="menu-title">Standerd</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url('/subject')}}">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Subject</span>
+            </a>
+        </li>
     </ul>
 </nav>

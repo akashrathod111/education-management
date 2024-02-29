@@ -18,5 +18,11 @@
                 <span class="menu-title">Subject</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url('/teacher')}}">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Teacher</span>
+            </a>
+        </li>
     </ul>
 </nav>

@@ -11,21 +11,27 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 grid-margin stretch-card">
-                <div class="card tale-bg">
-                    <div class="card-people mt-auto">
-                        <img src="{{ asset('dashboard/images/dashboard/people.svg') }}" alt="people">
-                        <div class="weather-info">
-                            <div class="d-flex">
-                                <div>
-                                    <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>31<sup>C</sup></h2>
-                                </div>
-                                <div class="ml-2">
-                                    <h4 class="location font-weight-normal">Bangalore</h4>
-                                    <h6 class="font-weight-normal">India</h6>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-md-6 stretch-card grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-title">Announcements</p>
+                        <ul class="icon-data-list">
+                            @if ($announcements->isEmpty())
+                                <p>No Announcements</p>
+                            @else
+                                @foreach ($announcements as $value)
+                                    <li>
+                                        <div class="d-flex">
+                                            <div>
+                                                <p class="text-info mb-1">{{ $value->name }}</p>
+                                                <p class="mb-0">{{ $value->description }}</p>
+                                                <small>9:30 am</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+                            @endif
+                        </ul>
                     </div>
                 </div>
             </div>

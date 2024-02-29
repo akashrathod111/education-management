@@ -25,3 +25,4 @@ Route::resource('subject', App\Http\Controllers\SubjectController::class);
 Route::resource('teacher', App\Http\Controllers\TeacherController::class);
 Route::resource('parent', App\Http\Controllers\StudentParentController::class);
 Route::resource('student', App\Http\Controllers\StudentController::class);
+Route::resource('announcement', App\Http\Controllers\AnnouncementController::class);
